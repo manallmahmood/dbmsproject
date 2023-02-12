@@ -229,12 +229,51 @@ body{
         <div class="input-box">
             <input type="text" pattern="\d{2}/\d{2}/\d{4}" placeholder="Date of Birth (DD/MM/YYYY)">
         </div>
+        <button type="button" class="btn btn-primary">Edit</button>
+        <button id="My-bookings" type="button" class="btn btn-primary">My Bookings</button>
           </div>
+          <div id="potential-sitters-section">
+            <div class="col-md-12 col-lg-7 col-xl-6 h-100">
+                <h2 class="text-center" style="color: rgb(37, 128, 255);" >Bookings</h2>
+                <div class="body-content">
+                  <div class="d-flex flex-column align-items-center">
+                    <div class="form-outline mb-1">
+                      <div class="text-center">
+                        <button type="button" class="btn btn-primary">Booking1</button>
+                      </div>
+                    </div>
+                    <div class="form-outline mb-1">
+                      <div class="text-center">
+                        <button type="button" class="btn btn-primary">Booking2</button>
+                      </div>
+                    </div>
+                    <div class="form-outline mb-1">
+                      <div class="text-center">
+                        <button type="button" class="btn btn-primary">Booking3</button>
+                    </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
       </form>
     </div>
 
     </div>
   </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    // Hide the potential sitters section by default
+    $("#potential-sitters-section").hide();
+
+    // Show the potential sitters section when the button is clicked
+    $("#My-bookings").click(function() {
+      $("#potential-sitters-section").show();
+    });
+  });
+</script>
+
 </html>
  

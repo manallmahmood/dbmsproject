@@ -1,0 +1,113 @@
+<html>
+  <head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<nav class="navbar navbar-expand-lg navbar-primary bg-primary" style="color: white;">
+  <a class="navbar-brand" href="#" style="color: white;">Seek-A-Sitter</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon" style="color: white;"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="homepage.html" style="color: white;">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pricing.html" style="color: white;">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="services.html" style="color: white;">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="help.html" style="color: white;">Help</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="accounts.html">
+          <img src="accountnav.png" alt="Account">
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</head>
+<style>
+    /* Neomorphism style */
+    .form-outline {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1), -2px -2px 10px #ffffff;
+      padding: 1.5rem;
+    }
+  
+    /* Center the form horizontally */
+    .form {
+      display: flex;
+      justify-content: center;
+    }
+  
+    /* Center the image horizontally and vertically */
+    img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+    }
+  </style>
+<body>
+    <section class="vh-100">
+        <div class="body-content">
+          <div class="row d-flex align-items-center h-100">
+            <div class="col-md-5 col-lg-6 col-xl-5 mx-auto">
+              <h2 class="text-center">Confirm Appointment</h2>
+              <div class="form-outline mb-1 align-items-center">
+                <img src="sitter1.jpg" class="img-fluid mx-auto d-block" width="150" height="150" alt="Sitter 3">
+                <div class="text-center">
+                  <button type="button" class="btn btn-primary">Sitter Chosen</button>
+              </div>
+              <form>
+                <div class="form-outline mb-4">
+                    <h3 class="text-center">Home Address</h3>
+                    <input type="address" id="form3Example4" class="form-control form-control-lg"
+                    placeholder="House/Unit Number" />
+                    <input type="address" id="form3Example4" class="form-control form-control-lg"
+                    placeholder="Street Number" />
+                    <input type="address" id="form3Example4" class="form-control form-control-lg"
+                    placeholder="District Name" />
+                  </div>                  
+                  <div class="form-outline mb-3">
+                    <input type="datetime-local" id="form3Example4" class="form-control form-control-lg"
+                        placeholder="Select date and time">
+                    <label class="form-label" for="form3Example4">Select Date and Time</label>
+                </div>
+                
+                <div class="form-outline mb-3">
+                    <input type="phone" id="form3Example4" class="form-control form-control-lg"
+                      placeholder="Enter your phone number" />
+                    <label class="form-label" for="form3Example4">Phone Number</label>
+                  </div>
+                <div class="text-center">
+                    <button id="confirm" type="button" class="btn btn-primary btn-lg"
+                    style="padding-left: 2.5rem; padding-right: 2.5rem;">Confirm</button>
+                </div>
+                <script>
+                    document.getElementById("confirm").addEventListener("click", function(){
+                      alert("Your booking is confirmed! Please contact your sitter at their contact number to further discuss your appointment details");
+                    });
+                  </script>
+              
+            </div>
+            </form>
+              
+              
+           </div>
+          </div>
+        </div>
+      </section>
+</body>
