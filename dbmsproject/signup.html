@@ -4,6 +4,7 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
+<head>
 <nav class="navbar navbar-expand-lg navbar-primary bg-primary" style="color: white;">
   <a class="navbar-brand" href="#" style="color: white;">Seek-A-Sitter</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +34,9 @@
     </ul>
   </div>
 </nav>
+</head>
 
+<body>
 <section class="vh-100">
   <div class="container-fluid h-custom">
     <div class="row d-flex justify-content-center align-items-center h-100">
@@ -42,7 +45,7 @@
           class="img-fluid" alt="Sample image">
       </div>
       <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-        <h2 class="text-center">Customer Login</h2>
+        <h2 class="text-center">Sign Up</h2>
         <form>
           <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
           </div>
@@ -59,20 +62,29 @@
               placeholder="Enter password" />
             <label class="form-label" for="form3Example4">Password</label>
           </div>
-
-          <div class="d-flex justify-content-between align-items-center">
-            <!-- Checkbox -->
-            <div class="form-check mb-0">
-
-          <div class="text-center text-lg-start mt-1 pt-2">
-            <button type="button" class="btn btn-primary btn-lg"
-              style="padding-left: 2.5rem; padding-right: 2.5rem;"onclick="window.location.href ='services.html'">Login</button>
-              <button type="button" class="btn btn-primary btn-lg"
-              style="padding-left: 2.5rem; padding-right: 2.5rem;"onclick="window.location.href ='signup.html'">Sign Up</button>
+          <div class="form-outline mb-3">
+            <input type="text" id="form3Example4" class="form-control form-control-lg"
+              placeholder="Enter phone number" />
+            <label class="form-label" for="form3Example4">Enter a valid phone number</label>
+          </div>
+          <div class="form-outline mb-3">
+            <input type="date" id="form3Example4" class="form-control form-control-lg"
+              placeholder="Enter Date Of Birth" />
+            <label class="form-label" for="form3Example4">Date Of Birth</label>
           </div>
 
+            <!-- Checkbox -->
+            <div class="form-outline mb-4"></div>
+            <input type="checkbox" id="form3Example4" class="form-control form-control-lg"/>
+              <label class="form-label" for="form3Example4">Accept terms and conditions</label>
+              <button type="button" class="btn btn-primary btn-lg"
+              style="padding-left: 2.5rem; padding-right: 2.5rem;"onclick="window.location.href ='services.html'">Sign up</button>
+          </div>
+            <div class="form-check mb-0">
+            
         </form>
       </div>
     </div>
   </div>
 </section>
+</body>
