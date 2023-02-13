@@ -1,0 +1,39 @@
+.product_table {
+    border: 1px solid black;
+    border-spacing: 10px;
+    margin-bottom: 50px;
+}
+
+.product_table th {
+    background-color: rgb(37, 128, 255);
+    color: white;
+    font-weight: bolder;
+}
+
+.product_table tbody td {
+    border-left: 1px solid #555555;
+    border-bottom: 1px solid #555555;
+}
+
+.product_table tfoot {
+    background-color: rgb(171, 209, 247);
+}
+
+.text-center { text-align: center; }
+.text-right { text-align: left; }
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.button-group button {
+    display: inline-block;
+ }
+ button {
+    height: 50px;
+    padding-top: 15px;
+    margin-bottom: 50px;
+    float: right;
+}
+ 
